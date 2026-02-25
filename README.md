@@ -4,6 +4,19 @@ ISBN-13 바코드와 EAN-5 분류번호를 EPS 벡터 파일로 생성하는 mac
 
 ![ISBN Barcode Maker](screen_shot.png)
 
+## 설치
+
+[Releases](https://github.com/totuworld/isbn-barcode-maker/releases) 페이지에서 최신 `.dmg` 파일을 다운로드하세요.
+
+> ⚠️ macOS에서 "손상된 파일" 경고가 나오는 경우
+>
+> Apple 인증서로 서명되지 않은 앱이라 macOS Gatekeeper가 차단합니다.
+> dmg에서 Applications 폴더로 앱을 복사한 후, 터미널에서 아래 명령어를 한 번 실행하세요:
+>
+> ```bash
+> xattr -cr /Applications/ISBN\ Barcode\ Maker.app
+> ```
+
 ## 기능
 
 - ISBN-13 바코드 생성 (체크디짓 자동 검증)
@@ -21,14 +34,16 @@ ISBN-13 바코드와 EAN-5 분류번호를 EPS 벡터 파일로 생성하는 mac
 - React 18 + TypeScript
 - Vite 6
 
-## 요구사항
+## 개발 셋업
+
+### 요구사항
 
 - macOS
-- Node.js >= 25.5.0
-- npm >= 11.8.0
+- Node.js >= 22.0.0
+- npm >= 10.0.0
 - Rust >= 1.89.0
 
-## 개발 셋업
+### 실행
 
 ```bash
 # 저장소 클론
